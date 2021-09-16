@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //Hiển thị ra 20 số trong dãy fibonacci đầu tiên
+    //tổng 2 số trước ra số sau
+    // 1;1;2;3;5;8;13;21;34;55;89;144;...
+    let num1 = 0;
+    let num2 = 1;
+    let count = +prompt("Nhập vào số lượng số cần hiển thị: ")
+    document.write("Những số cần tìm là: ")
+    for (let i = 1; i < count; i++) {
+            document.write(num2 + ",")
+            let num3 = num1 + num2
+            num1 = num2
+            num2 = num3
+    }
+
+
+</script>
 </body>
 </html>
