@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Tìm số đầu tiên trong dãy fibonacci chia hết cho 5
+    let N = +prompt("Nhap vao so luong: ")
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    let count = 2;
+    document.write(a +','+ b);
+    while (count < N) {
+        c = a + b;
+        a = b;
+        b = c;
+        document.write(',' + c);
+        count++;
+        if (c % 5 == 0){
+            document.write('<br>'+'Số ' + c + ' chia hết cho 5')
+        }
+    }
+
+</script>
+</body>
+</html>
